@@ -9,7 +9,7 @@ export const getDataList = () => {
   return (dispatch) => {
     axios
       .get(
-        "http://my-json-server.typicode.com/burtonrichard/react-redux-crud/data"
+        "https://my-json-server.typicode.com/burtonrichard/dbjson/data"
       )
       .then(function (response) {
         dispatch({
@@ -36,7 +36,7 @@ export const getDataDetail = (id) => {
   return (dispatch) => {
     axios
       .get(
-        "http://my-json-server.typicode.com/burtonrichard/react-redux-crud/data/" +
+        "https://my-json-server.typicode.com/burtonrichard/dbjson/data/" +
           id
       )
       .then(function (response) {
@@ -64,7 +64,7 @@ export const postDataAdd = (data) => {
   return (dispatch) => {
     axios
       .post(
-        "http://my-json-server.typicode.com/burtonrichard/react-redux-crud/data",
+        "https://my-json-server.typicode.com/burtonrichard/dbjson/data",
         data
       )
       .then(function (response) {
@@ -93,7 +93,7 @@ export const putDataUpdate = (data, id) => {
   return (dispatch) => {
     axios
       .put(
-        "http://my-json-server.typicode.com/burtonrichard/react-redux-crud/data/"+id,
+        "https://my-json-server.typicode.com/burtonrichard/dbjson/data/"+id,
         data
       )
       .then(function (response) {
@@ -123,7 +123,7 @@ export const deleteData = (id) => {
   return (dispatch) => {
     axios
       .delete(
-        "http://my-json-server.typicode.com/burtonrichard/react-redux-crud/data/"+id,
+        "https://my-json-server.typicode.com/burtonrichard/dbjson/data/"+id,
       )
       .then(function (response) {
         console.log(response);
