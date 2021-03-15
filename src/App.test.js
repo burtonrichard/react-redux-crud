@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import {shallow, mount, render} from 'enzyme';
+
 
 test('renders learn react link', () => {
   render(<App />);
