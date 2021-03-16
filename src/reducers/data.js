@@ -12,7 +12,7 @@ let initialState = {
   errorDataDetail: false,
   getDataResponse: false,
   errorDataResponse: false,
-  title: "Simple Crud!",
+  title: "Simple Crud!!!",
 };
 
 const data = (state = initialState, action) => {
